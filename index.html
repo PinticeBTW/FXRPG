@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Ficha Vigilante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="abrir-ficha">Abrir Ficha</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Ficha de Personagem</h2>
+            <label>Nome: <input type="text" id="nome"></label>
+            <label>Idade: <input type="number" id="idade"></label>
+            <label>Sexo: <input type="text" id="sexo"></label>
+            <label>AGILIDADE: <input type="number" id="agi"></label>
+            <div class="pericia">
+                <span>Acrobacia:</span>
+                <span id="acrobacia-valor">0</span>
+                <button onclick="alterarPericia('acrobacia', 5)">BOM</button>
+            </div>
+            <button onclick="guardarFicha()">Guardar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
