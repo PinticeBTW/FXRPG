@@ -1,11 +1,8 @@
 {
   "manifest_version": 1,
   "name": "Ficha FXRPG",
-  "description": "Extensão de ficha de personagem customizada para RPG.",
   "version": "1.0.0",
-  "entrypoint": {
-    "type": "website",
-    "url": "./index.html"
-  },
+  "description": "Extensão de ficha de personagem customizada para RPG.",
+  "source": "index.html",
   "permissions": []
 }
