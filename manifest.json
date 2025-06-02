@@ -9,7 +9,8 @@
   "permissions": [],
   "action": {
     "type": "client",
-    "path": "index.html"
+    "path": "index.html",
+    "title": "Abrir Ficha FXRPG"
   },
   "icon": "icon.png"
 }
