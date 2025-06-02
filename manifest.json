@@ -1,15 +1,64 @@
-{
-  "manifest_version": 1,
-  "name": "Ficha FXRPG",
-  "version": "1.0.0",
-  "description": "Extensão de ficha de personagem customizada para RPG.",
-  "author": "Tomaz Nunes",
-  "homepage_url": "https://fxrpg.vercel.app/",
-  "background_url": "https://fxrpg.vercel.app/background.js",
-  "permissions": [],
-  "action": {
-    "type": "client",
-    "path": "index.html"
-  },
-  "icon": "icon.png"
-}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ficha Vigilante</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .container {
+      position: relative;
+      width: 1000px;
+      height: 1414px;
+      background-image: url('ficha_vigilante_pg1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+    }
+    .campo {
+      position: absolute;
+      width: 100px;
+      font-size: 16px;
+      padding: 4px;
+    }
+    #pv { top: 380px; left: 150px; }
+    #san { top: 430px; left: 150px; }
+    #pp { top: 480px; left: 150px; }
+    .btns {
+      position: absolute;
+      top: 530px;
+      left: 150px;
+    }
+    .btns button {
+      margin-right: 5px;
+      padding: 4px 8px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input id="pv" class="campo" type="number" placeholder="PV" />
+    <input id="san" class="campo" type="number" placeholder="SAN" />
+    <input id="pp" class="campo" type="number" placeholder="PP" />
+
+    <div class="btns">
+      <button onclick="addValor('pv', 5)">BOM</button>
+      <button onclick="addValor('pv', 10)">MESTRE</button>
+      <button onclick="addValor('pv', 15)">ZIKA</button>
+    </div>
+  </div>
+
+  <script>
+    function addValor(id, valor) {
+      const campo = document.getElementById(id);
+      let atual = parseInt(campo.value) || 0;
+      campo.value = atual + valor;
+    }
+  </script>
+</body>
+</html>
