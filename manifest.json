@@ -11,7 +11,11 @@
     "type": "client",
     "path": "index.html",
     "title": "Abrir Ficha FXRPG",
-    "icon": "icon.png"
+    "icon": "icon.png",
+    "popover": {
+      "height": 600,
+      "width": 400
+    }
   },
   "icon": "icon.png"
 }
