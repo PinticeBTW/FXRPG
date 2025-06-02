@@ -1,9 +1,10 @@
 {
   "manifest_version": 1,
-  "name": "FXRPG",
+  "id": "fxrpg",
+  "title": "FXRPG",
   "description": "Extensão de ficha de personagem customizada para RPG.",
   "version": "1.0.0",
-  "type": "app",
   "entrypoint": "index.html",
+  "type": "app",
   "permissions": []
 }
