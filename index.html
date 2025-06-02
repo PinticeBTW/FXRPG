@@ -22,6 +22,43 @@
             <button onclick="guardarFicha()">Guardar</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+      async function guardarFicha() {
+        const ficha = {
+          nome: document.getElementById("nome").value,
+          idade: document.getElementById("idade").value,
+          sexo: document.getElementById("sexo").value,
+          agi: document.getElementById("agi").value,
+          acrobacia: document.getElementById("acrobacia-valor").innerText
+        };
+        if (window.owlbear) {
+          await window.owlbear.setMetadata({ ficha });
+          alert("Ficha guardada com sucesso!");
+        } else {
+          alert("Owlbear não disponível.");
+        }
+      }
+
+      async function carregarFicha() {
+        if (window.owlbear) {
+          const data = await window.owlbear.getMetadata();
+          const ficha = data.ficha || {};
+          document.getElementById("nome").value = ficha.nome || "";
+          document.getElementById("idade").value = ficha.idade || "";
+          document.getElementById("sexo").value = ficha.sexo || "";
+          document.getElementById("agi").value = ficha.agi || "";
+          document.getElementById("acrobacia-valor").innerText = ficha.acrobacia || "0";
+        }
+      }
+
+      function alterarPericia(pericia, valor) {
+        const span = document.getElementById(pericia + "-valor");
+        let atual = parseInt(span.innerText) || 0;
+        span.innerText = atual + valor;
+      }
+
+      // Carrega automaticamente ao abrir
+      carregarFicha();
+    </script>
 </body>
 </html>
