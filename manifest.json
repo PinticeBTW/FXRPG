@@ -1,11 +1,7 @@
 {
-  "manifest_version": 1,
-  "name": "Ficha FXRPG",
-  "version": "1.0.0",
+  "id": "fxrpg",
+  "title": "Ficha FXRPG",
   "description": "Extensão de ficha de personagem customizada para RPG.",
-  "entrypoint": {
-    "type": "website",
-    "url": "index.html"
-  },
-  "permissions": []
+  "type": "website",
+  "url": "https://fxrpg.vercel.app"
 }
