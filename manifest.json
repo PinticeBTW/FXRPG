@@ -1,6 +1,5 @@
 {
-  "id": "fxrpg",
-  "title": "Ficha FXRPG",
+  "name": "Ficha FXRPG",
   "description": "Extensão de ficha de personagem customizada para RPG.",
   "type": "website",
   "url": "https://fxrpg.vercel.app"
