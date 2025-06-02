@@ -3,7 +3,10 @@
   "name": "Ficha FXRPG",
   "description": "Extensão de ficha de personagem customizada para RPG.",
   "version": "1.0.0",
-  "entrypoint": "index.html",
+  "entrypoint": {
+    "type": "html",
+    "url": "index.html"
+  },
   "type": "app",
   "permissions": []
 }
