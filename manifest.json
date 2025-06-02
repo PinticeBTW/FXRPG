@@ -3,5 +3,5 @@
   "name": "FXRPG",
   "description": "Extensão de ficha de personagem customizada para RPG.",
   "version": "1.0.0",
-  "web_url": "./index.html"
+  "entrypoint": "./index.html"
 }
