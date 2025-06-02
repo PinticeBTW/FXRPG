@@ -1,7 +1,7 @@
 {
   "manifest_version": 1,
-  "name": "Ficha Vigilante",
+  "name": "FXRPG",
   "description": "Extensão de ficha de personagem customizada para RPG.",
   "version": "1.0.0",
-  "entry": "./index.html"
+  "web_url": "./index.html"
 }
