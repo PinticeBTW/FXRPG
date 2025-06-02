@@ -3,7 +3,5 @@
   "name": "Ficha Vigilante",
   "description": "Extensão de ficha de personagem customizada para RPG.",
   "version": "1.0.0",
-  "launch": {
-    "web_url": "./index.html"
-  }
+  "entry": "./index.html"
 }
