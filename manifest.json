@@ -1,6 +1,6 @@
 {
   "id": "fxrpg",
-  "title": "FXRPG",
+  "name": "FXRPG",
   "type": "app",
   "source": "./index.html",
   "permissions": []
