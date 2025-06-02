@@ -3,8 +3,6 @@
   "name": "Ficha FXRPG",
   "description": "Extensão de ficha de personagem customizada para RPG.",
   "version": "1.0.0",
-  "entrypoint": {
-    "type": "website",
-    "url": "https://fxrpg.vercel.app"
-  }
+  "type": "website",
+  "url": "https://fxrpg.vercel.app"
 }
