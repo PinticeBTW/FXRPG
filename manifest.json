@@ -1,8 +1,13 @@
 {
   "manifest_version": 1,
   "name": "Ficha FXRPG",
-  "description": "Extensão de ficha de personagem customizada para RPG.",
   "version": "1.0.0",
+  "description": "Extensão de ficha de personagem customizada para RPG.",
   "type": "website",
-  "url": "https://fxrpg.vercel.app/"
+  "url": "https://fxrpg.vercel.app/",
+  "icon": "icon.png", 
+  "author": "Tomaz Nunes",
+  "homepage_url": "https://fxrpg.vercel.app/",
+  "background_url": "https://fxrpg.vercel.app/background.js",
+  "permissions": []
 }
